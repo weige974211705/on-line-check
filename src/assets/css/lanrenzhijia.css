@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+a, img {
+	border:0;
+}
+body {
+	background:#1d1d1d;
+	font:12px/180% "Lucida Grande", Verdana, sans-serif;
+}
+.navbox {
+	margin:30px auto;
+	position:relative;
+	width:340px;
+}
+.navbox .mask {
+	position:absolute;
+	top:30px;
+	left:-190px;
+}
+.navbox h2 {
+	color:#ffff66;
+	margin:0 0 0 13px;
+	height:40px;
+	font-size:14px;
+}
+/* sliderNav */
+#sliderNav {
+	font-size:14px;
+	margin:30px 0 0 0;
+}
+#sliderNav li.sliderTag h3, #sliderNav li.sliderTag a {
+	display:block;
+	width:180px;
+	padding:5px 18px;
+	margin:0 0 5px 0;
+}
+#sliderNav li.sliderTag h3 {
+	color:#000;
+	background:#eee;
+	font-weight:normal;
+	font-size:14px;
+}
+#sliderNav li.sliderTag a {
+	color:#999;
+	background:#202020;
+	border:1px solid #1a1a1a;
+	text-decoration:none;
+}
+#sliderNav li.sliderTag a:hover {
+	color:#ffff66;
+}
+/* 代码整理：懒人之家 lanrenzhijia.com */

@@ -6,12 +6,12 @@ import Login from "../views/Login";
 
 const routes = [
   {
-    path: '/',
+    path: '/login',
     name: 'Login',
     component: Login
   },
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
     component: Home
   },
