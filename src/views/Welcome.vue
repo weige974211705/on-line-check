@@ -16,7 +16,7 @@
     #welcome {
         position: relative;
         height: 100%;
-        background-image: url("../assets/img/bookKingbridge.jpg");
+        background-image: url("../assets/img/innerhome2.jpg");
         background-repeat: repeat-x;
         background-size: 100% 100%;
 
@@ -26,7 +26,7 @@
             margin-left: 50px;
             font-weight: bold;
             font-size: 40px;
-            color: #1d1d1d;
+            color: white;
         }
     }
 </style>

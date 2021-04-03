@@ -134,7 +134,7 @@
         }
 
         .el-main {
-            background: #999999;
+            background: #f3f3f3;
             padding: 0;
         }
 

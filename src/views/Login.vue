@@ -3,7 +3,7 @@
         <el-container>
             <el-card class="box-card">
                 <!--头部-->
-                <div slot="header" class="card-title">
+                <div class="card-title">
                     <div class="title-picture block">
                         <el-image :src="require('../assets/login/title-picture.png')"></el-image>
                     </div>
@@ -146,10 +146,6 @@
 
                 .card-input {
                     margin-top: 30px;
-
-                    .el-input {
-
-                    }
                 }
 
                 .card-other {
