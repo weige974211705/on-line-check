@@ -1,11 +1,11 @@
 <template>
-    <div id="studentAdd">
-        <span>添加学生</span>
+    <div id="teacherAdd">
+        <span>添加教师</span>
         <el-button style="float: right; padding: 3px 10px"
                    @click="resetForm" type="primary">清空/重置
         </el-button>
         <el-form label-position="top" label-width="80px">
-            <el-form-item label="学号：user_id">
+            <el-form-item label="工号：user_id">
                 <el-input v-model="ruleForm.user_id"></el-input>
             </el-form-item>
             <el-form-item label="密码: password">
@@ -40,8 +40,8 @@
     import {reactive, toRefs, ref} from 'vue'
 
     export default {
-        name: "StudentAdd",
-        setup(props,context) {
+        name: "TeacherAdd",
+        setup(props, context) {
             const state = reactive({
                 ruleForm: {
                     user_id: '',
@@ -76,7 +76,7 @@
 </script>
 
 <style lang="scss" scoped>
-    #studentAdd {
+    #teacherAdd {
         margin: 30px;
 
         span {

@@ -10,9 +10,11 @@ import StudentAdd from "../views/studentManage/StudentAdd";
 
 /*引入教师管理部分*/
 import TeacherShow from "../views/teacherManage/TeacherShow";
+import TeacherAdd from "../views/teacherManage/TeacherAdd";
 
 /*引入课程管理部分*/
 import CourseShow from "../views/courseManage/CourseShow";
+import CourseAdd from "../views/courseManage/CourseAdd";
 
 const routes = [
     {
@@ -24,7 +26,7 @@ const routes = [
         path: '/',
         name: 'Home',
         component: Home,
-        redirect: '/studentAdd',
+        redirect: '/courseAdd',
         children: [
             {path: '/welcome', component: Welcome},
             {path: '/innerHome', component: InnerHome},
@@ -35,9 +37,11 @@ const routes = [
 
             /*引入教师管理部分*/
             {path: '/teacherShow', component: TeacherShow},
+            {path: '/teacherAdd', component: TeacherAdd},
 
             /*引入课程管理部分*/
             {path: '/courseShow', component: CourseShow},
+            {path: '/courseAdd', component: CourseAdd},
         ]
     },
 
