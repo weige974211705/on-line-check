@@ -50,10 +50,7 @@
                                 size="mini"
                                 type="warning"
                                 >修改</el-button>
-                        <el-button
-                                size="mini"
-                                type="danger"
-                                >删除</el-button>
+                        <DeleteBubble></DeleteBubble>
                     </template>
                 </el-table-column>
             </el-table>
