@@ -83,7 +83,7 @@
 <style lang="scss" scoped>
     #innerHome {
         height: 100%;
-        background-image: url("../assets/img/innerhome1.jpg");
+        background-image: url("../assets/img/innerHome/innerhome1.jpg");
         background-repeat: repeat-x;
         background-size: 100% 100%;
 

@@ -16,7 +16,7 @@
     #welcome {
         position: relative;
         height: 100%;
-        background-image: url("../assets/img/innerhome2.jpg");
+        background-image: url("../assets/img/welcome/welcome.jpg");
         background-repeat: repeat-x;
         background-size: 100% 100%;
 

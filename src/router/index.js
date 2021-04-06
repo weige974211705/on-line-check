@@ -22,6 +22,9 @@ import CourseEdit from "../views/courseManage/CourseEdit";
 // 引入 我的课程
 import MyCourse from "../views/myCourse/MyCourse";
 
+//引入 全部课程
+import AllCourse from "../views/allCourse/AllCourse";
+
 const routes = [
     {
         path: '/login',
@@ -54,6 +57,9 @@ const routes = [
 
             // 引入 我的课程
             {path: '/myCourse', component: MyCourse},
+
+            // 引入 全部课程
+            {path: '/allCourse', component: AllCourse},
         ]
     },
 

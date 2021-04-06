@@ -1,8 +1,6 @@
 <template>
     <div id="myCourse">
         <el-container>
-
-
             <el-row :gutter="20">
                 <el-col :span="6">
                     <el-card class="box-card">

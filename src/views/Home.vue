@@ -5,7 +5,7 @@
             <div class="headerinner">
                 <ul class="headernav">
                     <li class="logo">
-                        <img src="../assets/img/logo.jpg" alt="" />
+                        <img src="../assets/img/logo/logo.jpg" alt="" />
                     </li>
                     <li><a></a></li>
                     <li><a></a></li>
