@@ -1,50 +1,121 @@
 <template>
-  <div id="innerHome">
-    <el-container>
-      <el-card class="box-card">
-        <div class="clearfix">
-          <span>卡片名称</span>
+    <div id="innerHome">
+        <!--轮播图-->
+        <div class="block swiper-box">
+            <el-carousel height="400px">
+                <el-carousel-item>
+                    <el-image style="width: 100%; height: 100%"
+                              :src="require('../assets/img/swiper/swiper1-1.png')"
+                    ></el-image>
+                </el-carousel-item>
+                <el-carousel-item>
+                    <el-image style="width: 100%; height: 100%"
+                              :src="require('../assets/img/swiper/swiper1-2.png')"
+                    ></el-image>
+                </el-carousel-item>
+                <el-carousel-item>
+                    <el-image style="width: 100%; height: 100%"
+                              :src="require('../assets/img/swiper/swiper1-3.png')"
+                    ></el-image>
+                </el-carousel-item>
+                <el-carousel-item>
+                    <el-image style="width: 100%; height: 100%"
+                              :src="require('../assets/img/swiper/swiper1-4.png')"
+                    ></el-image>
+                </el-carousel-item>
+                <el-carousel-item>
+                    <el-image style="width: 100%; height: 100%"
+                              :src="require('../assets/img/swiper/swiper1-5.png')"
+                    ></el-image>
+                </el-carousel-item>
+            </el-carousel>
         </div>
-        <div v-for="o in 4" :key="o" class="text item">
-          {{ "列表内容 " + o }}
-        </div>
-      </el-card>
-      <el-card class="box-card">
-        <div class="clearfix">
-          <span>卡片名称</span>
-        </div>
-        <div v-for="o in 4" :key="o" class="text item">
-          {{ "列表内容 " + o }}
-        </div>
-      </el-card>
-      <el-card class="box-card">
-        <div class="clearfix">
-          <span>卡片名称</span>
-        </div>
-        <div v-for="o in 4" :key="o" class="text item">
-          {{ "列表内容 " + o }}
-        </div>
-      </el-card>
-    </el-container>
-  </div>
+        <el-container>
+            <el-card class="box-card">
+                <template #header>
+                    <div class="card-header">
+                        <span>公共选修课</span>
+                    </div>
+                </template>
+                <div class="back-box class-back-box1"></div>
+            </el-card>
+            <el-card class="box-card">
+                <template #header>
+                    <div class="card-header">
+                        <span>公共必修课</span>
+                    </div>
+                </template>
+                <div class="back-box class-back-box2"></div>
+            </el-card>
+            <el-card class="box-card">
+                <template #header>
+                    <div class="card-header">
+                        <span>专业选修课</span>
+                    </div>
+                </template>
+                <div class="back-box class-back-box3"></div>
+            </el-card>
+            <el-card class="box-card">
+                <template #header>
+                    <div class="card-header">
+                        <span>专业必修课</span>
+                    </div>
+                </template>
+                <div class="back-box class-back-box4"></div>
+            </el-card>
+        </el-container>
+    </div>
 </template>
 
 <script>
 </script>
 
 <style lang="scss" scoped>
-#innerHome {
-    height: 100%;
-    background-image: url("../assets/img/innerhome1.jpg");
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
+    #innerHome {
+        height: 100%;
+        background-image: url("../assets/img/innerhome1.jpg");
+        background-repeat: repeat-x;
+        background-size: 100% 100%;
 
-  .box-card {
-    width: 16%;
-    margin: 4% 2%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-  }
-}
+        .swiper-box {
+            opacity: 0.8;
+        }
+
+        .box-card {
+            width: 20%;
+            margin: 4% 2%;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            opacity: 0.8;
+
+            .card-header {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .back-box {
+                /*background: yellowgreen;*/
+                height: 100px;
+                background-repeat: repeat-x;
+                background-size: 100% 100%;
+            }
+
+            .class-back-box1 {
+                background-image: url("../assets/img/classBack/class-back1.jpg");
+            }
+
+            .class-back-box2 {
+                background-image: url("../assets/img/classBack/class-back2.jpg");
+            }
+
+            .class-back-box3 {
+                background-image: url("../assets/img/classBack/class-back3.jpg");
+            }
+
+            .class-back-box4 {
+                background-image: url("../assets/img/classBack/class-back4.jpg");
+            }
+        }
+    }
 </style>
