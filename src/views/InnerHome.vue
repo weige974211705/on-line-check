@@ -31,38 +31,48 @@
             </el-carousel>
         </div>
         <el-container>
-            <el-card class="box-card">
-                <template #header>
-                    <div class="card-header">
-                        <span>公共选修课</span>
-                    </div>
-                </template>
-                <div class="back-box class-back-box1"></div>
-            </el-card>
-            <el-card class="box-card">
-                <template #header>
-                    <div class="card-header">
-                        <span>公共必修课</span>
-                    </div>
-                </template>
-                <div class="back-box class-back-box2"></div>
-            </el-card>
-            <el-card class="box-card">
-                <template #header>
-                    <div class="card-header">
-                        <span>专业选修课</span>
-                    </div>
-                </template>
-                <div class="back-box class-back-box3"></div>
-            </el-card>
-            <el-card class="box-card">
-                <template #header>
-                    <div class="card-header">
-                        <span>专业必修课</span>
-                    </div>
-                </template>
-                <div class="back-box class-back-box4"></div>
-            </el-card>
+            <el-row :gutter="20">
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <template #header>
+                            <div class="card-header">
+                                <span>公共选修课</span>
+                            </div>
+                        </template>
+                        <div class="back-box class-back-box1"></div>
+                    </el-card>
+                </el-col>
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <template #header>
+                            <div class="card-header">
+                                <span>公共必修课</span>
+                            </div>
+                        </template>
+                        <div class="back-box class-back-box2"></div>
+                    </el-card>
+                </el-col>
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <template #header>
+                            <div class="card-header">
+                                <span>专业选修课</span>
+                            </div>
+                        </template>
+                        <div class="back-box class-back-box3"></div>
+                    </el-card>
+                </el-col>
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <template #header>
+                            <div class="card-header">
+                                <span>专业必修课</span>
+                            </div>
+                        </template>
+                        <div class="back-box class-back-box4"></div>
+                    </el-card>
+                </el-col>
+            </el-row>
         </el-container>
     </div>
 </template>
@@ -81,40 +91,40 @@
             opacity: 0.8;
         }
 
-        .box-card {
-            width: 20%;
-            margin: 4% 2%;
-            box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
+        .el-container {
+            margin: 2% 1% 0 2.5% ;
             opacity: 0.8;
 
-            .card-header {
-                font-size: 25px;
-                text-align: center;
-            }
+            .el-row {
+                width: 100%;
 
-            .back-box {
-                /*background: yellowgreen;*/
-                height: 100px;
-                background-repeat: repeat-x;
-                background-size: 100% 100%;
-            }
+                .card-header {
+                    font-size: 25px;
+                    text-align: center;
+                }
 
-            .class-back-box1 {
-                background-image: url("../assets/img/classBack/class-back1.jpg");
-            }
+                .back-box {
+                    /*background: yellowgreen;*/
+                    height: 100px;
+                    background-repeat: repeat-x;
+                    background-size: 100% 100%;
+                }
 
-            .class-back-box2 {
-                background-image: url("../assets/img/classBack/class-back2.jpg");
-            }
+                .class-back-box1 {
+                    background-image: url("../assets/img/classBack/class-back1.jpg");
+                }
 
-            .class-back-box3 {
-                background-image: url("../assets/img/classBack/class-back3.jpg");
-            }
+                .class-back-box2 {
+                    background-image: url("../assets/img/classBack/class-back2.jpg");
+                }
 
-            .class-back-box4 {
-                background-image: url("../assets/img/classBack/class-back4.jpg");
+                .class-back-box3 {
+                    background-image: url("../assets/img/classBack/class-back3.jpg");
+                }
+
+                .class-back-box4 {
+                    background-image: url("../assets/img/classBack/class-back4.jpg");
+                }
             }
         }
     }

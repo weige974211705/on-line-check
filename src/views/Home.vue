@@ -7,20 +7,21 @@
                     <li class="logo">
                         <img src="../assets/img/logo.jpg" alt="" />
                     </li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#">个人主页</a></li>
-                    <li><a href="#">功能介绍</a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a>个人主页</a></li>
+                    <li><a>功能介绍</a></li>
                     <li class="search">
                         <a class="search_pic"></a>
                     </li>
-                    <li class="list">
-                        <a></a>
-                    </li>
+<!--                    <li class="list">-->
+<!--                        <a></a>-->
+<!--                    </li>-->
+                    <li><a>退出</a></li>
                 </ul>
                 <!-- 搜索 -->
                 <form action="">
@@ -31,19 +32,15 @@
                     </div>
                 </form>
                 <!-- 会员登录 -->
-                <div class="member">
-                    <p>会员中心</p>
-                    <ul>
-                        <li>
-                            <img src="img/huiyuan1.png" alt="">
-                            <a href="login.html">登录</a>
-                        </li>
-                        <li>
-                            <img src="img/huiyuan1.png" alt="">
-                            <a href="register.html">新会员注册</a>
-                        </li>
-                    </ul>
-                </div>
+<!--                <div class="member">-->
+<!--                    <p>操作</p>-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <img src="img/huiyuan1.png" alt="">-->
+<!--                            <a href="login.html">退出</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
             </div>
 
         </el-header>
